@@ -37,7 +37,7 @@ Page {
                 verticalAlignment: VerticalAlignment.Top
 
                 Label {
-                    text: " Welcome to NFC Tool V" + _about.appVersion
+                    text: " Welcome to BlackSlash"
                     textStyle {
                         base: SystemDefaults.TextStyles.TitleText
                         fontWeight: FontWeight.W100
@@ -46,7 +46,7 @@ Page {
                 }
 
                 Label {
-                    text: "Demonstrates the BlackBerry 10 NFC APIs"
+                    text: "Keeping Track Even If You Are Not In The Office!"
                     enabled: false
                     preferredWidth: 650
                     textStyle {
@@ -134,18 +134,7 @@ Page {
                 horizontalAlignment: HorizontalAlignment.Left
 
                 Label {
-                    text: "NFC Tool V" + _about.appVersion
-                    enabled: false
-                    preferredWidth: 650
-                    textStyle {
-                        base: SystemDefaults.TextStyles.SmallText
-                        fontWeight: FontWeight.W100
-                        fontStyle: FontStyle.Default
-                        color: Color.White
-                    }
-                }
-                Label {
-                    text: "© 2012 Research In Motion Limited."
+                    text: "© 2012 BlackSlash."
                     enabled: false
                     preferredWidth: 650
                     textStyle {

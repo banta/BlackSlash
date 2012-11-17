@@ -107,10 +107,6 @@ void MainMenu::deleteModules() {
 		delete _writeCustom;
 		_writeCustom = 0;
 	}
-	if (_sendVcard) {
-		delete _sendVcard;
-		_sendVcard = 0;
-	}
 	if (_apduDetails) {
 		delete _apduDetails;
 		_apduDetails = 0;
@@ -140,7 +136,6 @@ void MainMenu::createModules() {
 	_writeSp = new WriteSp();
 	_writeText = new WriteText();
 	_writeCustom = new WriteCustom();
-	_sendVcard = new SendVcard();
 	_apduDetails = new ApduDetails();
 	_eventLog = EventLog::getInstance();
 	_emulateSp = new EmulateSp();
@@ -173,7 +168,6 @@ void MainMenu::findAndConnectControls() {
 	QObject::connect(this, SIGNAL(write_sp()), _writeSp, SLOT(show()));
 	QObject::connect(this, SIGNAL(write_text()), _writeText, SLOT(show()));
 	QObject::connect(this, SIGNAL(write_custom()), _writeCustom, SLOT(show()));
-	QObject::connect(this, SIGNAL(send_vcard_selected()), _sendVcard, SLOT(show()));
 	QObject::connect(this, SIGNAL(emulate_tag_selected()), _emulateSp, SLOT(show()));
 	QObject::connect(this, SIGNAL(iso7816_selected()), _apduDetails, SLOT(show()));
 	QObject::connect(this, SIGNAL(about_selected()), _about, SLOT(show()));

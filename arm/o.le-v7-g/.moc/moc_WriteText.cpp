@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'WriteText.hpp'
 **
-** Created: Sat Nov 17 12:53:48 2012
+** Created: Sat Nov 17 16:04:31 2012
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.3)
 **
 ** WARNING! All changes made in this file will be lost!

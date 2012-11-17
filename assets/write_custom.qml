@@ -31,7 +31,7 @@ Page {
             rightPadding: 30
 
             Label {
-                text: "Write a Custom Tag"
+                text: "Register Employee"
                 textStyle {
                     base: SystemDefaults.TextStyles.BigText
                     color: Color.LightGray
@@ -40,7 +40,7 @@ Page {
             }
 
 		    Label {
-		        text: "Enter the domain for your EXTERNAL type"
+		        text: "Enter employee name:"
 		        textStyle {
 		            base: SystemDefaults.TextStyles.BodyText
 		            color: Color.LightGray
@@ -51,7 +51,7 @@ Page {
 		    TextArea {
 		        id: txf_domain
 		        objectName: "txf_domain"
-		        hintText: "Enter the domain for your EXTERNAL type"
+		        hintText: "Enter employee name"
 		        text: _writeCustMenu._domain
 		        textStyle {
 		            base: SystemDefaults.TextStyles.BodyText
@@ -59,7 +59,7 @@ Page {
 		    }
 		    
 		    Label {
-		        text: "Enter your chosen Type Name"
+		        text: "Enter employee number:"
 		        textStyle {
 		            base: SystemDefaults.TextStyles.BodyText
 		            color: Color.LightGray
@@ -70,7 +70,7 @@ Page {
 		    TextArea {
 		        id: txf_type
 		        objectName: "txf_type"
-		        hintText: "Enter your chosen type name"
+		        hintText: "Enter employee number"
 		        text: _writeCustMenu._type
 		        textStyle {
 		            base: SystemDefaults.TextStyles.BodyText
@@ -78,7 +78,7 @@ Page {
 		    }
 		    
 		    Label {
-		        text: "Enter your tag Content"
+		        text: "Enter employee position:"
 		        textStyle {
 		            base: SystemDefaults.TextStyles.BodyText
 		            color: Color.LightGray
@@ -89,28 +89,19 @@ Page {
 		    TextArea {
 		        id: txf_content
 		        objectName: "txf_content"
-		        hintText: "Enter your tag content"
+		        hintText: "Enter employee position"
 		        text: _writeCustMenu._content
 		        textStyle {
 		            base: SystemDefaults.TextStyles.BodyText
 		        }
-		    }   
-
-            Label {
-                text: "Once you are happy with the values you have specified in the fields above press the Write button in the Action Bar below.\n\nYou will then be presented with an Event Log screen where you will be able to present a tag to the handset to have your data written to it."
-                textStyle {
-                    base: SystemDefaults.TextStyles.BodyText
-                    color: Color.LightGray
-                    lineHeight: 1.1
-                }
-            }
+		    }
         }
 	}
 	
 	actions: [
 	    ActionItem {
 	        id: write_custom_action
-	        title: "Write"
+	        title: "Submit"
 	        imageSource: "images/write.png"
 	        ActionBar.placement: ActionBarPlacement.OnBar
 	        onTriggered: {

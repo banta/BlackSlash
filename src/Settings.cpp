@@ -17,9 +17,9 @@
 // General constants
 
 const char* Settings::AppVersion = "4.01";
-const char* Settings::DOMAIN = "my.domain.com";
-const char* Settings::TYPE = "myrecordtype";
-const char* Settings::CONTENT = "content";
+const char* Settings::DOMAIN = "";
+const char* Settings::TYPE = "";
+const char* Settings::CONTENT = "";
 const char* Settings::SP_URI = "http://www.bbc.co.uk";
 const char* Settings::SP_TEXT = "The world's greatest news organisation";
 const char* Settings::TEXT = "Hello, I am an NFC tag!";

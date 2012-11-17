@@ -27,7 +27,6 @@
 #include "WriteSp.hpp"
 #include "WriteText.hpp"
 #include "WriteCustom.hpp"
-#include "SendVcard.hpp"
 #include "ApduDetails.hpp"
 #include "About.hpp"
 #include "EmulateSp.hpp"
@@ -54,7 +53,6 @@ private:
     WriteSp* _writeSp;
     WriteText* _writeText;
     WriteCustom* _writeCustom;
-    SendVcard* _sendVcard;
     ApduDetails* _apduDetails;
     EventLog* _eventLog;
     About* _about;
